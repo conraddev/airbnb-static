@@ -2,7 +2,7 @@
   height: 250px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
-  color: white;
+  color: $gray-lighter;
   position: relative;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -22,13 +22,14 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-}
-.card-description h2 {
+  h2 {
   font-size: 22px;
 }
-.card-description p {
+  p {
   font-size: 15px;
 }
+}
+
 .card-link {
   position: absolute;
   top: 0;
@@ -37,7 +38,8 @@
   z-index:2;
   background: black;
   opacity: 0;
+  &:hover {
+    opacity: 0.1;
+  }
 }
-.card-link:hover{
-  opacity: 0.1;
-}
+
